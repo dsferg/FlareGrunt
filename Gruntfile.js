@@ -13,9 +13,9 @@ module.exports =  function (grunt) {
                 files: [{
                     expand: true,
                     //Add a comment here
-                    cwd: 'C:\\Flare Projects\\Self-Paced Training\\training-project\\Output\\Daniel\\HTML5',
+                    cwd: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor',
                     src: '**/*.htm*',
-                    dest: 'C:\\Flare Projects\\Self-Paced Training\\training-project\\Output\\Daniel\\HTML5'
+                    dest: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor'
                 }]
             },
             options: {
@@ -27,9 +27,9 @@ module.exports =  function (grunt) {
             development: {
                 files: [{
                     expand: true,
-                    cwd: 'C:\\Flare Projects\\Self-Paced Training\\training-project\\Output\\Daniel\\HTML5',
+                    cwd: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor',
                     src: '**/*.js',
-                    dest: 'C:\\Flare Projects\\Self-Paced Training\\training-project\\Output\\Daniel\\HTML5'
+                    dest: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor'
                 }]
             },
             options: {
@@ -42,9 +42,23 @@ module.exports =  function (grunt) {
             development: {
                 files: [{
                     expand: true,
-                    cwd: 'C:\\Flare Projects\\Self-Paced Training\\training-project\\Output\\Daniel\\HTML5',
+                    cwd: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor',
                     src: '**/*.css',
-                    dest: 'C:\\Flare Projects\\Self-Paced Training\\training-project\\Output\\Daniel\\HTML5'
+                    dest: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor'
+                }]
+            },
+            options: {
+                                   
+            }
+        },
+        
+        imagemin: {
+            development: {
+                files: [{
+                    expand: true,
+                    cwd: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor'
                 }]
             },
             options: {
@@ -58,7 +72,8 @@ module.exports =  function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks("grunt-contrib-htmlmin");
     grunt.loadNpmTasks("grunt-contrib-cssmin");
+    grunt.loadNpmTasks("grunt-contrib-imagemin");
     
     
-    grunt.registerTask("default", ['htmlmin', 'uglify', 'cssmin']);
+    grunt.registerTask("default", ['htmlmin', 'uglify', 'cssmin', 'imagemin']);
 };
