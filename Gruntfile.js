@@ -1,7 +1,9 @@
 'use strict';
 
 module.exports =  function (grunt) {
-    
+
+    var path = 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A';
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         clean: {
@@ -14,9 +16,9 @@ module.exports =  function (grunt) {
                 files: [{
                     expand: true,
                     //Add a comment here
-                    cwd: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A',
+                    cwd: path,
                     src: '**/*.htm*',
-                    dest: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A'
+                    dest: path
                 }]
             },
             options: {
@@ -30,9 +32,9 @@ module.exports =  function (grunt) {
             development: {
                 files: [{
                     expand: true,
-                    cwd: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A',
+                    cwd: path,
                     src: '**/*.js',
-                    dest: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A'
+                    dest: path
                 }]
             },
             options: {
@@ -46,9 +48,9 @@ module.exports =  function (grunt) {
             development: {
                 files: [{
                     expand: true,
-                    cwd: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A',
+                    cwd: path,
                     src: '**/*.css',
-                    dest: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A'
+                    dest: path
                 }]
             },
             options: {
@@ -61,9 +63,9 @@ module.exports =  function (grunt) {
             development: {
                 files: [{
                     expand: true,
-                    cwd: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A',
+                    cwd: path,
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A'
+                    dest: path
                 }]
             },
             options: {
