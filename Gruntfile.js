@@ -14,9 +14,9 @@ module.exports =  function (grunt) {
                 files: [{
                     expand: true,
                     //Add a comment here
-                    cwd: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor',
+                    cwd: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A',
                     src: '**/*.htm*',
-                    dest: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor'
+                    dest: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A'
                 }]
             },
             options: {
@@ -30,9 +30,9 @@ module.exports =  function (grunt) {
             development: {
                 files: [{
                     expand: true,
-                    cwd: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor',
+                    cwd: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A',
                     src: '**/*.js',
-                    dest: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor'
+                    dest: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A'
                 }]
             },
             options: {
@@ -46,9 +46,9 @@ module.exports =  function (grunt) {
             development: {
                 files: [{
                     expand: true,
-                    cwd: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor',
+                    cwd: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A',
                     src: '**/*.css',
-                    dest: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor'
+                    dest: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A'
                 }]
             },
             options: {
@@ -61,9 +61,9 @@ module.exports =  function (grunt) {
             development: {
                 files: [{
                     expand: true,
-                    cwd: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor',
+                    cwd: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'C:\\whleary_master_project\\Output\\Daniel\\Help Sites\\Helps Site - Distributor'
+                    dest: 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A'
                 }]
             },
             options: {
