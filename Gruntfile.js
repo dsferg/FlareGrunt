@@ -3,7 +3,7 @@
 module.exports =  function (grunt) {
 
     //var path = 'C:\\Flare Projects\\zTesting Projects\\test project\\Output\\Daniel\\HTML5 - Tripane - Audience A';
-    var path = grunt.options('projectPath');
+    var path = grunt.option('projectPath');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
