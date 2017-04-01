@@ -8,6 +8,7 @@ module.exports =  function (grunt) {
             output: ['ToBeCleaned/*']
         },
         
+        //minify .htm files
         htmlmin: {
             development: {
                 files: [{
@@ -19,10 +20,12 @@ module.exports =  function (grunt) {
                 }]
             },
             options: {
+                 removeComments: true,
                  collapseWhitespace: true
             }
         },
         
+        //minify .js files
         uglify: {
             development: {
                 files: [{
@@ -38,6 +41,7 @@ module.exports =  function (grunt) {
             }
         },
         
+        //minify css files
         cssmin: {
             development: {
                 files: [{
@@ -52,6 +56,7 @@ module.exports =  function (grunt) {
             }
         },
         
+        //compress png, jpg, and gif images
         imagemin: {
             development: {
                 files: [{
@@ -75,5 +80,5 @@ module.exports =  function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-imagemin");
     
     
-    grunt.registerTask("default", ['htmlmin', 'uglify', 'cssmin', 'imagemin']);
+    grunt.registerTask("buns", ['htmlmin', 'uglify', 'cssmin', 'imagemin']);
 };
